@@ -1,1 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
+
+body, html {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+ .router-container {
+    position:relative;
+    height: 100%;
+}
+
+.route-container>* {
+    display:block;
+}
+
+.menu-container {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+#menu-button {
+    margin-left: 2.5em;
+}
+
+#menu-content {
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+}
+
+#menu-button:hover ~ #menu-content, #menu-content:hover {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+
+.component-container {
+    height: 100%;
+    width: 100%;
+}
+
+.content-center {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.list-group-item {
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.home-container > .content-center > h1 {
+    font-size: 50px !important;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000000;
+    border-bottom-color: rgba(52, 52, 52, 0.35);
+    display: inline-block; 
+}
+
+.home-container > .content-center > p {
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.home-container {
+    background: url(assets/u-w-bg.jpg);
+}
+
+.projects-container {
+    background-color: darkseagreen;
+}
+
+.profile-container {
+    background-color: whitesmoke;
+}
+
+.contact-container {
+    background-color: darksalmon;
+}
+
+.technologies-container {
+    background-color: palevioletred;
+}
+
+.experience-container {
+    background-color: teal;
+}
