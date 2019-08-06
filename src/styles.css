@@ -72,6 +72,7 @@ body, html {
 }
 
 .profile-container {
+    overflow-y: scroll;
     background-color: whitesmoke;
 }
 
